@@ -79,7 +79,7 @@ def train(model, train_loader, epochs, optimizer, loss_fn, device):
             
             # TODO: Complete this train method to train the model provided.
             #Loss calculation and backward propagation
-            loss = loss_fn(model.forward(batch_X), batch_Y.float())
+            loss = loss_fn(model.forward(batch_X), batch_y.float())
             loss.backward()
             
             #optimizer steps
